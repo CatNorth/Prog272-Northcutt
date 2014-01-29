@@ -1,0 +1,27 @@
+body{
+	font-family:sans-serif;
+	background-color:#f5f5dc;
+}
+
+h1 {
+	color:blue;
+}
+
+h2 {
+	color:blue;
+}
+
+button {
+	color:navy;
+	background-color:#f0f8ff;
+	border-width:2px;
+	border-color:navy;
+}
+
+p {
+	color:navy;
+	text-size:18px;
+}
+
+
+
