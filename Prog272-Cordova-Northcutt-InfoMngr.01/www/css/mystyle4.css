@@ -157,13 +157,13 @@ a:hover, a:active, a:focus {
 }
 
 #container { 
- width:1135px; height:2650px;
+ width:1135px; height:3050px;
  margin:0 auto;
  background-color:#58613E; /* army green */
 }
 
 #main { 
-  width:1080px; height:2640px;
+  width:1080px; height:3040px;
   margin:0 auto;
   background-color:#443266;  /* blue violet bossanova */
 }

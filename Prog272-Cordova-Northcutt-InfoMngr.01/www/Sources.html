@@ -12,11 +12,15 @@
     <!--External file calls-->
     <link href="css/reset.css" rel="stylesheet" type="text/css"  />
     <link href="css/mystyle4.css" rel="stylesheet" type="text/css"  />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <script src="js/Presidents.js"></script>
+    <script src="js/index-pres.js"></script>
 	<script src="js/cordova.js"></script>
+
   </head>
 
 <!-- ******BODY************************ -->  
-<body>
+<body ng-app="customResourceDemo" ng-controller="CustomResourceCtrl">
 <div id="container">
  <div id="main">
  
@@ -122,6 +126,23 @@
         <input type="search" name="googlesearch" style="width:20%;margin-left:35px;" />
         <label>&nbsp;</label>
         <input type="submit" style="width:15%;margin-left:65px;" />
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <div>
+	<h1 style="text-align:center;">Herbs</h1>
+	<br />
+		<p style="margin-left:120px;">As implemented, you need to refresh after selecting buttons. I'll update.</p>
+		<button ng-click="addPresident()" style="margin-left:120px;">Add Herb</button>
+		<button ng-click="deletePresident()" style="margin-left:120px;">Delete Herb</button>
+		<br />
+		<br />
+		<ul ng-repeat="president in presidents" style="margin-left:120px;">
+			<li>{{president.presidentName}}</li>
+		</ul>	
   </div>
  </form>
   <!--******END************************* -->
